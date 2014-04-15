@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TODO AngularJS - Manual Style</title>
+
+    <link rel="stylesheet" media="screen" href="css/bootstrap.min.css">
+
+</head>
+<body ng-app="TodoApp">
+
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="#/" class="navbar-brand">Home</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="#/next">Next</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <div ng-view></div>
+
+    </div>
+
+    <!-- AngularJS Scripts - BEGIN -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <!-- AngularJS Scripts - END -->
+
+    <!-- My Scripts - BEGIN -->
+    <script src="js/app.js"></script>
+    <script src="js/controllers/main.js"></script>
+    <script src="js/controllers/next.js"></script>
+    <!-- My Scripts - END -->
+</body>
+</html>
